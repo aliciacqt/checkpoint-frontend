@@ -35,22 +35,52 @@ a {
 a:hover {
   color: #ff9dc4;
 }
+section {
+  width: 95%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+label {
+  margin: 0.5rem 0 0.125rem 0;
+}
+
+#form-submit {
+  background-color: #ff0068;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+#form-submit:hover {
+  color: #ff9dc4;
+}
 
 #countries-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .country-card {
-  border: 1px solid #ff9dc4;
-  border-radius: 0.25rem;
-  margin: 0.5rem;
-  padding: 1rem 0.5rem;
   width: 28%;
   text-align: center;
+}
+
+form, .country-card {
+  border: 1px solid #ff9dc4;
+  border-radius: 0.25rem;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
 }
 
 #country-emoji {
