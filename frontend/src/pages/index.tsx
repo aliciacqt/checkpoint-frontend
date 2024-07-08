@@ -11,8 +11,8 @@ export default function Home() {
   }
 
   return (
-    <div id="countries-container">
-      {countries.countries.map((country) => <CountryCard {...country} key={country.id} />)}
-    </div>
+    <section id="countries-container">
+      {countries.countries.map((country) => <CountryCard {...country} link={`/countries/${country.code}`} key={country.id} />)}
+    </section>
   );
 }
